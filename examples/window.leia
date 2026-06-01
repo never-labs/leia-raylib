@@ -10,7 +10,7 @@ result, err := leia.run({
     fps: 60,
     clear: white,
     draw: func(rl) {
-        rl.drawText("Hello from GScript + raylib", 220, 200, 24, red)
+        rl.drawText("Hello from Leia + raylib", 220, 200, 24, red)
         return true, nil
     },
 })

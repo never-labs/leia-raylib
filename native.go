@@ -4,12 +4,12 @@ import (
 	"image/color"
 
 	rl "github.com/gen2brain/raylib-go/raylib"
-	"github.com/never-labs/gscript"
+	"github.com/never-labs/leia"
 )
 
-// Module returns the native raylib binding exposed to GScript.
-func Module() gscript.Module {
-	m := gscript.Module{
+// Module returns the native raylib binding exposed to Leia.
+func Module() leia.Module {
+	m := leia.Module{
 		"_native":               true,
 		"initWindow":            initWindow,
 		"closeWindow":           rl.CloseWindow,

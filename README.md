@@ -1,18 +1,18 @@
 # leia-raylib
 
-Raylib support for GScript as an external package. GScript itself does not ship
+Raylib support for Leia as an external package. Leia itself does not ship
 raylib bindings; this module provides the native binding and a small script
 helper layer.
 
 Run the demo directly with Go:
 
 ```bash
-go run github.com/never-labs/leia-raylib/cmd/leia-raylib@v0.2.0 examples/bounce.gs
+go run github.com/never-labs/leia-raylib/cmd/leia-raylib@v0.4.0 examples/bounce.leia
 ```
 
 Example:
 
-```gscript
+```leia
 leia := require("github.com/never-labs/leia-raylib")
 
 leia.run({
