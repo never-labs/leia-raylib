@@ -1,8 +1,5 @@
 func requireRaylib() {
-    if rl._stub {
-        return nil, "raylib support is not compiled in; rebuild gscript with -tags rl"
-    }
-    return rl, nil
+    return require("github.com/never-labs/leia-raylib/native"), nil
 }
 
 func color(r, g, b, a) {

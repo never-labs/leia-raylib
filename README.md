@@ -1,11 +1,13 @@
 # leia-raylib
 
-Small GScript helper package for the built-in `rl` raylib module.
+Raylib support for GScript as an external package. GScript itself does not ship
+raylib bindings; this module provides the native binding and a small script
+helper layer.
 
-Use with a GScript binary built with raylib support:
+Run the demo directly with Go:
 
 ```bash
-go build -tags rl ./cmd/gscript
+go run github.com/never-labs/leia-raylib/cmd/leia-raylib@v0.2.0 examples/bounce.gs
 ```
 
 Example:
